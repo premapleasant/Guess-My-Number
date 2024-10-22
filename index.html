@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess the Number Game</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div id="main-container">
+        <div id="title">
+            <h1>GUESS THE NUMBER</h1>
+        </div>
+
+        <div id="user-1-container">
+            <div>
+                <h1 class="player1">Player 1</h1>
+                <div class="input-1">
+                    <p id="input-box-1"><img src="dice-0.png" class="choice" /></p>
+                </div>
+            </div>
+            <button class="image-button user-1">
+                <img src="dice-1.png" />
+            </button>
+            <button class="image-button user-1">
+                <img src="dice-2.png" alt="" />
+            </button>
+            <button class="image-button user-1">
+                <img src="dice-3.png" alt="" />
+            </button>
+            <br>
+            <button class="image-button user-1">
+                <img src="dice-4.png" alt="" />
+            </button>
+            <button class="image-button user-1">
+                <img src="dice-5.png" alt="" />
+            </button>
+            <button class="image-button user-1">
+                <img src="dice-6.png" alt="" />
+            </button>
+            <br>
+            <button class="lock" onclick="lockPlayer1()">Lock</button>
+        </div>
+
+        <div id="dice-container">
+            <div>
+                <h1>Game On</h1>
+            </div>
+            <div>
+                <p id="result-image">     
+                    <img src="dice-0.png" class="choice" />
+                </p>
+            </div>
+            <div>
+                <button class="restart" onclick="reset()">Play Again</button><br>
+                <button class="start" onclick="randomNum()">Start</button>
+                
+            </div>
+        </div>
+
+        <div id="user-2-container">
+            <div>
+                <h1 class="player2">Player 2</h1>
+                <div class="input-2">
+                    <p id="input-box-2"><img src="dice-0.png" class="choice" /></p>
+                </div>
+            </div>
+            <button class="image-button user-2">
+                <img src="dice-1.png" alt="" />
+            </button>
+            <button class="image-button user-2">
+                <img src="dice-2.png" alt="" />
+            </button>
+            <button class="image-button user-2">
+                <img src="dice-3.png" alt="" />
+            </button>
+            <br />
+            <button class="image-button user-2">
+                <img src="dice-4.png" alt="" />
+            </button>
+            <button class="image-button user-2">
+                <img src="dice-5.png" alt="" />
+            </button>
+            <button class="image-button user-2">
+                <img src="dice-6.png" alt="" />
+            </button>
+            <br>
+            <button class="lock" onclick="lockPlayer2()">Lock</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
